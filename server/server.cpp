@@ -5,7 +5,7 @@ server::server()
 {
     qDebug() << "start";
     qServer = new QTcpServer();
-    qServer->listen(QHostAddress::Any, 7777);
+    qServer->listen(QHostAddress::Any, 1314);
     connect(qServer, SIGNAL(newConnection()), this, SLOT(acceptConn()));
 }
 
